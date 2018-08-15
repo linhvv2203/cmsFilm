@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "CMS.PHIM_KEENG", ".", "{933A95B8-3546-4857-90DB-A05725150879}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv3.5"
+		Debug.AspNetCompiler.VirtualPath = "/minhcontent"
+		Debug.AspNetCompiler.PhysicalPath = "..\CMS.PHIM_KEENG\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\minhcontent\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/minhcontent"
+		Release.AspNetCompiler.PhysicalPath = "..\CMS.PHIM_KEENG\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\minhcontent\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "50656"
+		SlnRelativePath = "..\CMS.PHIM_KEENG\"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(Performance) = preSolution
+		HasPerformanceSessions = true
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x86 = Release|x86
+		tesst|Any CPU = tesst|Any CPU
+		tesst|x86 = tesst|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{933A95B8-3546-4857-90DB-A05725150879}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{933A95B8-3546-4857-90DB-A05725150879}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{933A95B8-3546-4857-90DB-A05725150879}.Debug|x86.Build.0 = Debug|Any CPU
+		{933A95B8-3546-4857-90DB-A05725150879}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{933A95B8-3546-4857-90DB-A05725150879}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{933A95B8-3546-4857-90DB-A05725150879}.Release|x86.ActiveCfg = Debug|Any CPU
+		{933A95B8-3546-4857-90DB-A05725150879}.Release|x86.Build.0 = Debug|Any CPU
+		{933A95B8-3546-4857-90DB-A05725150879}.tesst|Any CPU.ActiveCfg = Debug|Any CPU
+		{933A95B8-3546-4857-90DB-A05725150879}.tesst|Any CPU.Build.0 = Debug|Any CPU
+		{933A95B8-3546-4857-90DB-A05725150879}.tesst|x86.ActiveCfg = Debug|Any CPU
+		{933A95B8-3546-4857-90DB-A05725150879}.tesst|x86.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

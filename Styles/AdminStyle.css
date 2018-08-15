@@ -1,0 +1,1474 @@
+﻿body
+{
+	font-size: 12px;
+	font-family:Arial;
+}
+.padCont
+{
+	padding:12px 19px 12px 12px;
+	border:1px #CCC solid;
+}
+.padCont a
+{
+	text-decoration:none;
+	color:#000;
+}
+.marCont
+{
+	margin:12px 19px 12px 12px;
+	border:1px #CCC solid;
+}
+.marCont a
+{
+	text-decoration:none;
+	color:#000;
+}
+.Scroll
+{
+	height:300px;
+	overflow:auto;
+	width:761px;
+}
+
+#LoginForm
+{
+	display:table;
+	margin:0 auto;
+	left:50%;
+	width:350px;
+	margin-top:20px;
+}
+#TopLg
+{
+	display:table;
+	width:100%;
+	margin-bottom:10px;
+}
+#BigCatTitle #TotalSearchRs
+{
+	font-size:12px;
+	color:#2F2F2F;
+	margin-left:20px;
+	font-family:Arial;
+}
+#MainLg
+{
+	margin:auto;
+}
+#MainLg
+{
+	margin:auto;
+}
+.language
+{
+	height:20px;
+	text-align:right;
+}
+.LiLanguage
+{
+	margin:20px 0 0 261px;	
+}
+.Lilogo img
+{
+	float:left;
+	margin-left:6px;
+	border:none;
+}
+.loginContent input
+{
+	width:120px;
+	margin-right:5px;
+}
+.LoginIcon
+{
+	background-color:#FFF;
+	background-image:url(images/LoginIcon.gif);
+	background-repeat:no-repeat;
+	background-position:top left;
+	padding:5px 0 2px 12px;
+	text-decoration:underline;
+	border:none;
+}
+.CheckBox input
+{
+	width:20px;
+	float:left;
+}
+.login
+{
+	height: 432px;
+	background: url(images/login_bg.gif) no-repeat top center;
+	font-family:arial;
+	font-size:12px;
+	color:#000;
+}
+.login .loginImg
+{
+	padding-top: 20px;
+	margin-left:20px;
+	float:left;
+}
+.login .loginContent
+{
+	text-align: left;
+	padding-top: 20px;
+}
+.login .loginTitleText
+{
+	text-align: left;
+	color: #0b3caa;
+	font-size: 18px;
+	font-weight: bold;
+	padding-bottom: 20px;
+	padding-top: 15px;
+	font-family:Tahoma;
+}
+.login .loginContent .loginLabel
+{
+	padding-right:5px;
+}
+.login .loginContent .FailureText
+{
+	padding-top: 0px;
+	padding-bottom: 6px;
+	font-size: 11px;
+	text-align:left;
+}
+.login .loginContent .LoginButton
+{
+}
+.login .loginContent .CheckBox
+{
+	color: Black;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	font-size: 12px;
+	margin-right:0;
+}
+/*-----------------------------------------------------Default.aspx---------------------------------------------*/
+.RighBanner
+{
+	padding-top:4px;
+	float:right;
+	margin-right:10px;
+	text-align:right;
+}
+.RoomList td
+{
+	padding:3px 0px 3px 0px;
+}
+.RoomList img
+{
+	margin-right:3px;
+}
+.RoomList a
+{
+	font-family:Arial;
+	color:Black;
+	font-size:12px;
+}
+.RoomList a:hover
+{
+	color:#FF0000;
+}
+.mainContent legend
+{
+	color:#FE0202;
+	font-family:Verdana;
+	font-size:13px;
+	font-weight:bold;
+	padding:0 5px 0 5px;
+}
+.mainContent fieldset
+{
+	margin-bottom:15px;
+}
+.SearchSub
+{
+	float:left;
+	margin-left:5px;
+}
+.SearchSub input
+{
+	height:22px;
+}
+.TitPage
+{
+	height:40px;
+	line-height:40px;
+	vertical-align:middle;
+	margin-bottom:20px;
+	background-color:#f8f8f8;
+}
+
+.icon_image {
+    margin-bottom: 5px;
+    margin-left: 10px;
+    margin-right: 5px;
+    vertical-align: middle;
+    width:28px;
+}
+
+span.subNavLink {
+    color: #1b3f95;
+    font-family: tahoma,arial,verdana;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform:uppercase;
+}
+
+.ArticleTitle
+{
+	
+}
+.ArticleDesc
+{
+	font-weight:bold;
+	margin-bottom:5px;
+}
+.ArticleAuthor
+{
+	text-align:right;
+	font-weight:bold;
+	margin:5px;
+}
+.top
+{
+	width: 990px;
+	background-image:url(images/BgBannerBE.gif);
+	background-repeat:repeat;
+	height: 70px;
+	display:table;
+	margin-bottom:3px;
+}
+.top .banner
+{
+	background: url(images/LogoVI2.jpg);
+	background-position: 20px 0px;
+	background-repeat: no-repeat;
+	height:70px;
+	width:300px;
+	float:left;
+}
+.center
+{
+	width: 990px;
+	border-right: solid 1px #c0c0c0;
+	border-left: solid 1px #c0c0c0;
+	display: inline-block;
+	background: url(images/AdminMenuLeftBackGround.gif);
+	background-repeat: repeat-y;
+	background-position: top left;
+}
+.center .leftMenu
+{
+	width: 185px;
+	float: left;
+}
+.center .leftMenu .parrentMenu
+{
+	background: url(images/MenuLeftAdmin.gif);
+	background-repeat: no-repeat;
+	background-position: top left;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	font-size: 13px;
+	font-weight: bold;
+	padding-left: 25px;
+	cursor: pointer;
+}
+.lblLink
+{
+	font-size:13px;
+	font-weight:bold;
+	margin:10px 0 0px 0;
+}
+.lblLink a
+{
+	background-image:url(images/AdvSrch.gif);
+	background-repeat:no-repeat;
+	padding:8px 0 8px 35px;
+}
+
+.center .leftMenu .parrentMenu a
+{
+	color: Black;
+	text-decoration: none;
+	cursor: pointer;
+	font-family:Arial;
+}
+.center .leftMenu .parrentMenu a:hover
+{
+	color: red;
+	text-decoration: none;
+}
+.center .mainContent
+{
+	float: right;
+	width: 795px;
+	background: url(images/AdminBackGroudRight.gif);
+	background-position: top right;
+	background-repeat: repeat-y;
+	font-family: Arial;
+	font-size: 12px;
+}
+.bottom
+{
+	clear: both;
+	width: 990px;
+	background: #a6cdeb;
+	height: 45px;
+	border: solid 1px #c0c0c0;
+	font-size: 13px;
+}
+.bottom .bottomLogo img
+{
+	float: left;
+	text-align: left;
+	margin-top: 8px;
+	margin-left: 400px;
+}
+.bottom .bottomCompanyInfo
+{
+	float:left;
+	margin: 14px 0 0 10px;
+}
+
+/*-------------------------------------------------- CategoryList.ascx ----------------------------------------*/
+.categoryList
+{
+	margin: 10px 20px 20px 10px;
+}
+.gridview
+{
+	border: solid 1px #acacac;
+	width:100%;
+}
+.gridviewItemCheckBox
+{
+	text-align: center;
+	border-right: solid 1px #acacac;
+	border-bottom: solid 1px #acacac;
+}
+.gridviewItemSituation
+{
+	height: 25px;
+	border-right: solid 1px #acacac;
+	border-bottom: solid 1px #acacac;
+	text-align: center;
+}
+.gridviewItemMenuName
+{
+	height: 22px;
+	border-right: solid 1px #acacac;
+	border-bottom: solid 1px #acacac;
+	padding-left: 10px;
+}
+.gridviewItemMenuName a
+{
+	text-decoration: none;
+	color: Black;
+	cursor: pointer;
+}
+.gridviewItemMenuName a:hover
+{
+	text-decoration: none;
+	color: Red;
+	cursor: pointer;
+}
+.gridviewHeader
+{
+	text-align: center;
+	height: 30px;
+	border-color:#acacac;
+
+}
+
+.gridviewHeaderLeft
+{
+	text-align: left;
+	height: 30px;
+	border-color:#ACACAC;
+
+}
+
+.gridviewHeader_group
+{
+	text-align: left;
+	height: 30px;
+	border-color:#acacac;
+	background-color:#E0E0E0;
+	font-weight:bold;
+	padding-left:10px;
+	font-size:13px;
+	color:#000000;
+
+}
+
+.TextLeft
+{
+	text-align:left;
+	padding-left:5px;
+	border-color:#acacac;
+}
+.TextCenter
+{
+	text-align:center;
+	border-color:#acacac;
+}
+
+.btnAdd
+{
+	border: solid 1px #ffffff;
+	cursor: pointer;
+	background-color: White;
+	vertical-align: top;
+	text-align: left;
+}
+.btnDelete
+{
+	border: solid 1px #ffffff;
+	cursor: pointer;
+	background-color: White;
+	vertical-align: top;
+	text-align: left;
+}
+.btnSave
+{
+	border: solid 1px #ffffff;
+	cursor: pointer;
+	background-color: White;
+	vertical-align: top;
+	text-align: left;
+}
+.btnList
+{
+	border: solid 1px #ffffff;
+	cursor: pointer;
+	background-color: White;
+	vertical-align: top;
+	text-align: left;
+}
+
+/*-------------------------------------------------CategoryEdit.ascx--------------------------------------------*/
+.categoryEdit, .categoryEdit input, .categoryEdit textarea
+{
+	font-family: Arial;
+	font-size: 12px;
+	color: #000;
+
+}
+.categoryEdit .categoryEditContent
+{
+	display: block;
+	margin-left: 10px;
+}
+.categoryEditContentItem
+{
+	height: 100%;
+	margin-bottom: 10px;
+	display: table;
+	clear: both;
+	width: 100%;
+}
+.categoryEditLeft
+{
+	float: left;
+	width: 120px;
+	padding-top: 3px;
+}
+.categoryEditRight
+{
+	width: 505px;
+	display:table;
+}
+.categoryEdit .categoryEditContent .categoryEditContentItemType
+{
+	height: 100%;
+	margin-bottom: 10px;
+	display: inline-block;
+	clear: both;
+	width: 100%;
+}
+.categoryEdit .categoryEditContent .categoryEditContentItemType .categoryEditLeft
+{
+	float: left;
+	width: 20%;
+	padding-top: 10px;
+}
+.categoryEdit .categoryEditContent .categoryEditContentItemType .categoryEditRight
+{
+	float: right;
+	width: 80%;
+}
+.tbxDescription
+{
+	font-family: Arial;
+	font-size: 12px;
+}
+/*---------------------------------------- CategoryApprove.ascx ------------------------*/
+.categoryApproved
+{
+	margin: 10px 20px 20px 10px;
+}
+.categoryApproved .categoryApprovedContent
+{
+	display: inline-block;
+	margin-left: 10px;
+}
+.categoryApproved .categoryApprovedContent .categoryApprovedContentItem
+{
+	height: 100%;
+	margin-bottom: 10px;
+	display: inline-block;
+	clear: both;
+	width: 100%;
+}
+.categoryApproved .categoryApprovedContent .categoryApprovedContentItem .categoryApprovedLeft
+{
+	float: left;
+	width: 22%;
+	padding-top: 3px;
+}
+.categoryApproved .categoryApprovedContent .categoryApprovedContentItem .categoryApprovedRight
+{
+	float: right;
+	width: 78%;
+}
+.categoryViewMenu
+{
+	margin-left: 10px;
+	margin-top: 10px;
+}
+.tab
+{
+	height: 30px;
+	background: #ebebeb;
+	border: solid 1px #c0c0c0;
+	padding-right: 5px;
+	padding-left: 5px;
+	color: Black;
+}
+.selectedTab
+{
+	color: Red;
+}
+/*------------------------------------------------SearchItem.ascx-------------------------------------------*/
+.advanceSearch
+{
+	margin: 10px 20px 20px 10px;
+}
+.searchFormTitle
+{
+	color: Blue;
+	text-decoration: underline;
+	font-size: 13px;
+	margin: 15px 20px 10px 10px;
+}
+
+.advanceSearch .searchForm
+{
+	border: solid 1px #c0c0c0;
+	display: inline-block;
+	width: 100%;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+.advanceSearch .searchForm .row
+{
+	clear: both;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+.advanceSearch .searchForm .row .rowLeft
+{
+	float: left;
+	width: 45%;
+}
+.advanceSearch .searchForm .row .rowLeft .rowLeftLeft
+{
+	float: left;
+	width: 45%;
+	padding-top: 3px;
+}
+.advanceSearch .searchForm .row .rowLeft .rowLeftRight
+{
+	float: right;
+	width: 55%;
+}
+.advanceSearch .searchForm .row .rowRight
+{
+	float: right;
+	width: 55%;
+}
+.advanceSearch .searchForm .row .rowRight .rowRightLeft
+{
+	float: left;
+	width: 30%;
+	padding-top: 3px;
+}
+.advanceSearch .searchForm .row .rowRight .rowRightRight
+{
+	float: right;
+	width: 70%;
+}
+.gvListItem
+{
+	clear: both;
+	margin: 5px 20px 20px 10px;
+}
+.paging
+{
+	margin: 0px 20px 0px 10px;
+}
+.paging .announcement
+{
+	width: 100%;
+	text-align: left;
+}
+.paging .pageMove
+{
+	width: 100%;
+	display: inline-block;
+	margin-top: 8px;
+	height: 30px;
+}
+.paging .pageMove .gotoPage
+{
+	width: 49%;
+	float: right;
+	text-align: right;
+	height: 25px;
+}
+
+.paging .pageMove .result
+{
+	width: 50%;
+	height: 20px;
+	float: left;
+	text-align: left;
+	margin-top: 5px;
+	font-weight: bold;
+}
+/*-------------------------------------ItemEdit.ascx--------------------------------------*/
+.itemEdit
+{
+	margin: 10px 20px 20px 10px;
+}
+/*---------------------------------------SearchUser.ascx------------------------------------------------*/
+.searchUser
+{
+}
+.searchUser .searchUserTilte
+{
+	background: #eceeef;
+	padding-left: 20px;
+	font-size: 20px;
+	padding-top: 5px;
+	padding-bottom: 10px;
+}
+.searchUser .searchUserHeaderPanel
+{
+	cursor: pointer;
+	clear: both;
+}
+.searchUser .searchUserHeaderPanel .searchUserAdvanceSearch
+{
+	padding-top: 10px;
+	padding-left: 20px;
+	color: Black;
+	font-size: 12px;
+}
+.searchUser .searchUserContentPanel
+{
+	overflow: hidden;
+}
+.searchUser .searchUserHeaderPanel .searchUserAdvanceSearch
+{
+	padding-bottom: 20px;
+	padding-top: 15px;
+}
+.searchUser .searchUserContentPanel .searchUserAdvanceSearch .searchUserSearchForm
+{
+}
+.searchUser .searchUserContentPanel .searchUserAdvanceSearch .searchUserSearchForm .searchUserPnSearch
+{
+	border: solid 1px #c0c0c0;
+}
+.searchUser .searchUserContentPanel .searchUserAdvanceSearch .searchUserSearchForm .searchUserDateTile
+{
+	padding-top: 10px;
+	padding-left: 20px;
+	float: left;
+	padding-right: 20px;
+}
+.searchUser .searchUserContentPanel .searchUserAdvanceSearch .searchUserSearchForm .searchUserRow1
+{
+}
+.searchUser .searchUserContentPanel .searchUserAdvanceSearch .searchUserSearchForm .searchUserRow1 .searchUserDateFromTile
+{
+	padding-top: 10px;
+	float: left;
+	padding-right: 10px;
+}
+.searchUser .searchUserContentPanel .searchUserAdvanceSearch .searchUserSearchForm .searchUserRow1 .searchUserDateFromContent
+{
+	padding-top: 7px;
+	float: left;
+	padding-right: 60px;
+}
+.searchUser .searchUserContentPanel .searchUserAdvanceSearch .searchUserSearchForm .searchUserRow1 .searchUserDateToTile
+{
+	padding-top: 10px;
+	float: left;
+	padding-right: 20px;
+}
+.searchUser .searchUserContentPanel .searchUserAdvanceSearch .searchUserSearchForm .searchUserRow1 .searchUserDateToContent
+{
+	padding-top: 7px;
+}
+.searchUser .searchUserContentPanel .searchUserAdvanceSearch .searchUserSearchForm .searchUserRow2
+{
+	padding-top: 5px;
+}
+
+.searchUser .searchUserContentPanel .searchUserAdvanceSearch .searchUserSearchForm .searchUserRow2 .searchUserRoleTile
+{
+	padding-left: 100px;
+	float: left;
+	padding-right: 15px;
+}
+.searchUser .searchUserContentPanel .searchUserAdvanceSearch .searchUserSearchForm .searchUserRow2 .searchUserRoleComtent
+{
+	float: left;
+}
+.searchUser .searchUserContentPanel .searchUserAdvanceSearch .searchUserSearchForm .searchUserRow2 .searchUserKeyWordTile
+{
+	padding-left: 105px;
+	float: left;
+	padding-right: 30px;
+}
+.searchUser .searchUserContentPanel .searchUserAdvanceSearch .searchUserSearchForm .searchUserRow3
+{
+	padding-top: 20px;
+	padding-left: 18px;
+}
+
+.searchUser .searchUserContentPanel .searchUserAdvanceSearch .searchUserSearchForm .searchUserRow3 .searchUserButtonFind
+{
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+.searchUser .searchUserOther
+{
+	padding-top: 20px;
+	text-align: left;
+}
+.searchUser .searchUserOther .searchUserOtherPageChangeTitle
+{
+	padding-left: 620px;
+	float: left;
+	padding-right: 10px;
+	text-align: left;
+}
+.searchUser .searchUserOther .searchUserOtherPageChangeContent
+{
+	padding-bottom: 10px;
+}
+.searchUser .searchUserBotton
+{
+	padding-top: 20px;
+	padding-left: 340px;
+}
+.searchUser .searchUserBotton .searchUserBottonAdd
+{
+	float: left;
+}
+.searchUser .searchUserBotton .searchUserBottonAdd .btnAdd
+{
+	clear: both;
+}
+.searchUser .searchUserBotton .searchUserBottonDelete
+{
+}
+.searchUser .searchUserBotton .searchUserBottonDelete .btnDelete
+{
+}
+.tab
+{
+    height: 26px;
+    font-family: Verdana;
+    font-size: 11px;
+    font-weight: normal;
+    border: solid 1px #b3b3b3;
+    background-color: #eeeeee;
+    border-bottom: solid 1px #438cb4;
+    padding: 2px 5px;
+    color: #000000;
+}
+.selectedTab
+{
+    height: 26px;
+    font-family: Verdana;
+    font-size: 11px;
+    font-weight: normal;
+    background-color: #add3eb;
+    border: solid 1px #07629b;
+    border-bottom: solid 1px #ffffff;
+    color: #6A3638;
+    padding: 2px 10px;
+}
+
+.TitleInfo
+{
+	font-family:Arial;
+	font-size:12px;
+	font-weight:bold;
+}
+.InfoName
+{
+	font-family:Arial;
+	font-size:12px;
+	font-weight:bold;
+	color:Red;
+}
+.ClassHeader
+{
+    width: 100%;
+    padding:4px 10px;
+    margin-bottom:10px;
+    font-size: 13px;
+    font-family: Verdana;
+    font-weight: bold;
+    background-color: #eceeef;
+}
+.TopImage
+{
+    font-size: 10pt;
+    font-weight: normal;
+    cursor: pointer;
+    font-family: Arial, Georgia, Times;
+    text-decoration: none;
+    width: 100px;
+    text-align: center;
+}
+.ImageActive img
+{
+	border:2px #e0e0e0 solid;
+}
+.mainMenuLogin a
+{
+	font-family:Arial;
+	text-decoration:none;
+	color:#0212AF;
+}
+.mainMenuLogin a:hover
+{
+	color:Red;
+}
+.LgConfirm
+{
+	display:table;
+	margin:auto;
+	margin-top:15px;
+	width:285px;
+}
+.LgConLeft
+{
+	float:left;
+	width:110px;
+	padding-top:5px;
+	text-align:right;
+}
+.LgConRight
+{
+	display:table;
+	float:left;
+	margin-left:5px;
+}
+.LgConRight input
+{
+	width:80px;
+	margin-right:10px;
+}
+.LabelSearchArticle
+{
+	float: left;
+	text-align:left;
+	margin-right:10px;
+}
+.LabelSearchArticle span
+{
+}
+.TextSearchArticle
+{
+	float: left; 
+ 	width: 188px; 
+	display:table;
+}
+.TextSearchArticle input
+{
+	float:left;
+	width:80px;
+	margin-left:0px;
+}
+.TextSearchArticle img
+{
+	float:left;
+	width:16px;
+	margin-right:5px;
+}
+.TextSearchArticle span
+{
+}
+.UserIcon, .AddressIcon, .PhoneIcon, .EmailIcon,
+.ContentIcon, .TitleIcon, .InfoIcon, .AttachIcon, .DateIcon, .CommentIcon
+{
+	padding:2px 0 2px 26px;
+	background-repeat:no-repeat;
+	background-position:top left;
+}
+.CommentIcon
+{
+	background-image:url(images/CommentIcon.gif);
+}
+.DateIcon
+{
+	background-image:url(images/DateIcon.gif);
+}
+.AttachIcon
+{
+	background-image:url(images/AttachIcon.gif);
+}
+.InfoIcon
+{
+	background-image:url(images/InfoIcon.gif);
+}
+.UserIcon
+{
+	background-image:url(images/UserIcon.gif);
+}
+.AddressIcon
+{
+	background-image:url(images/AddressIcon.gif);
+}
+.PhoneIcon
+{
+	background-image:url(images/PhoneIcon.gif);
+}
+.EmailIcon
+{
+	background-image:url(images/EmailIcon.gif);
+}
+.ContentIcon
+{
+	background-image:url(images/ContentIcon.gif);
+}
+.TitleIcon
+{
+	background-image:url(images/TitleIcon.gif);
+}
+.LineBE
+{
+	display:table;
+	width:98%;
+	padding:5px 0 5px 10px;
+}
+.LeftCol
+{
+	float:left;
+	width:150px;
+	padding-top:3px;
+	display:table;
+	font-family:Arial;
+	font-size:12px;
+}
+.LeftCol80
+{
+	float:left;
+	width:80px;
+	padding-top:3px;
+	display:table;
+	font-family:Arial;
+	font-size:12px;
+}
+.RightCol, .RightCol2
+{
+	display:inline-table;
+	/*width:79%;*/
+	float:left;
+}
+.LeftColmn
+{
+	float:left;
+	width:220px;
+	display:table;
+	font-weight:bold;
+}
+.RightColmn
+{
+	display:inline-table;
+	float:left;
+	padding-left:7px;
+}
+.RightCol input, .RightCol select
+{
+	width:200px;
+}
+.RightCol2 input, .RightCol2 select
+{
+	width:120px;
+}
+.RightCol img, .RightCol2 img
+{
+	cursor:pointer;
+	border:none;	
+	margin:0 5px 0 3px;
+}
+
+.PublishDate
+{
+	font-family:Arial;
+	font-size:10px;
+	color:Gray;
+	font-style:italic;
+}
+#NDBtn
+{
+	margin:17px 2px 15px 0px;
+	text-align:right;
+}
+#NDBtnBE
+{
+	margin:17px 2px 10px 0px;
+	text-align:center;
+}
+#BtnCom, .BtnCom
+{
+	text-align:left;
+}
+#NDBtn a, #NDBtnBE a, #BtnCom a, .BtnCom a
+{
+	font-family:Verdana;
+	font-size:11px;
+	color:#0212AF;
+	text-decoration:none;
+	margin-left:5px;
+	cursor:pointer;
+	padding:9px 0 12px 34px;
+}
+#NDBtn a:hover, #NDBtnBE a:hover, #BtnCom a:hover .BtnCom a:hover
+{
+	color:Red;
+}
+.PrintPageBtn, .CommentBtn, .SendToFriendBtn, .CloseBtn, .OKBtn, .SaveIcon, .PreviewIcon, .CloseIcon,
+.DeleteIcon, .AddIcon, .SearchIcon, .EditIcon, .BackIcon, .FeedBackIcon, .BrowseIcon, .ReportIcon,
+.UploadIcon, .SearchBtn, .MailIcon,.SendIcon
+{
+	background-repeat:no-repeat;
+	background-position:top left;
+	text-decoration:none;
+}
+.SearchBtn
+{
+	background-image:url(images/SearchIcon.gif);
+	background-color:#FFF;
+	border:none;
+	padding:5px 0 5px 30px;
+	color:#0212AF;
+	font-size:12px;
+	cursor:pointer;
+}
+.UploadIcon
+{
+	background-image:url(images/UploadIcon.gif);
+}
+.ReportIcon
+{
+	background-image:url(images/ReportIcon.gif);
+}
+.PreviewIcon
+{
+	background-image:url(images/PreviewIcon.gif);
+}
+.BrowseIcon
+{
+	background-image:url(images/OpenFile.png);
+}
+.SaveIcon
+{
+	background-image:url(images/SaveIcon.gif);
+}
+.MailIcon
+{
+	background-image:url(images/Email.gif);
+}
+.SendIcon
+{
+	background-image:url(images/send.jpg);
+}
+.FeedBackIcon
+{
+	background-image:url(images/FeedBackIcon.gif);
+}
+.PrintPageBtn
+{
+	background-image:url(images/PrintPage.gif);
+}
+.CommentBtn
+{
+	background-image:url(images/Comment.gif);
+}
+.CloseBtn, .CloseIcon
+{
+	background-image:url(images/CloseBtn.gif);
+}
+.OKBtn
+{
+	background-image:url(images/ok.gif);
+}
+.SendToFriendBtn
+{
+	background-image:url(images/Email.gif);
+}
+.DeleteIcon
+{
+	background-image:url(images/DelIcon.gif);
+}
+.AddIcon
+{
+	background-image:url(images/AddIcon.gif);
+}
+
+.SearchIcon
+{
+	background-image:url(images/SearchIcon.gif);
+}
+.EditIcon
+{
+	background-image:url(images/EditIcon.gif);
+}
+.BackIcon
+{
+	background-image:url(images/BackIcon.gif);
+}
+.UserIcon
+{
+	background-image:url(images/personal.png);
+}
+#AdvSearchBox
+{
+	margin-bottom:25px;
+}
+#AdvSearchBox legend
+{
+	color:#FE0202;
+	font-size:13px;
+	font-weight:bold;
+	padding:0 5px 0 5px;
+}
+.languageEN
+{
+	background-image:url(images/EN.gif);
+	background-position:left top;
+	width: 28px;
+	height: 17px;
+	cursor: pointer;
+	float:left;
+	border:none;
+	margin-right:10px;
+}
+.languageVI
+{
+	width: 25px;
+	height: 17px;
+	cursor: pointer;
+	background-image:url(images/VI.gif);
+	background-position:top left;
+	float:left;
+	border:none;
+}
+#NDTitle
+{
+	font-family:Verdana;
+	font-size:18px;
+	font-weight:bold;
+	color:#CE0514;
+	margin-bottom:10px;
+}
+.DarkLine
+{
+	background-color:#F9F9F9;
+}
+.Border
+{
+	border:1px #F2F2F2 solid;
+}
+.MediaUpload
+{
+	width:600px;
+	margin:10px 0 0 5px;
+}
+.PagingWrap
+{
+	display:table;
+	width:100%;
+	margin:12px auto;
+}
+.MediaItem
+{
+	display:table;
+	margin:10px auto;
+	float:left;
+}
+.MultiView td
+{
+	vertical-align:top;
+}
+.lblTitCheckbox
+{
+	float:left;
+	margin-top:5px;
+}
+.RoleList
+{
+	overflow:scroll;
+	width:100%;	
+	height:300px;
+}
+.GroupList
+{
+	overflow:scroll;
+	width:100%;	
+	height:200px;
+}
+/*Danh sach quyen*/
+table.TableListRole
+{
+	font-family:Verdana;
+	font-size:11px;
+	font-weight:normal;
+	color:#2F2D2E;
+	border:#bdbdbd 0px solid;  
+}
+
+table.TableListRole tr.HeaderEmpty td
+{
+	color: #3b3b3b ;
+	background-color:#f2f2f2 ;
+	border-bottom:#999999 1px solid; 
+	height: 1px;
+	text-align:center;
+}
+table.TableListRole tr.Header td
+{
+	font-family:Arial;
+	font-size:12px;	
+	font-weight:bold;
+	color: #7d3030;
+	background-color:#ece4d7;
+	height: 24px;
+	text-align:center;
+}
+
+table.TableListRole tr.Header td.HeaderRed
+{
+	font-family:Arial;
+	font-size:12px;	
+	font-weight:bold;
+	color: #FFFFFF ;
+	background-color:#DC161E;
+	height: 24px;
+	text-align:center;
+}
+
+table.TableListRole tr.Header td.HeaderBlue
+{
+	font-family:Arial;
+	font-size:12px;	
+	font-weight:bold;
+	color: #FFFFFF ;
+	background-color:#128CF4;
+	height: 24px;
+	text-align:center;
+}
+
+table.TableListRole tr.Header th
+{
+	font-family:Verdana;
+	font-size:11px;
+	font-weight:bold;
+	color: #7d3030 ;
+	background-color:#edecec;
+	height: 28px;
+	text-align:center;
+	BORDER-RIGHT: #D8D6D7 0px solid;
+}
+table.TableListRole tr.Header th A
+{
+	color: #82492E;
+}
+
+
+table.TableListRole td.CheckBox
+{
+	width:10%;
+	text-align:center;
+}
+
+table.TableListRole td
+{
+	font-family:Verdana;
+	font-size:11px;
+	font-weight:normal;
+	color:#2F2D2E;
+	text-decoration : none; 
+	height: 22px ;
+	BORDER-BOTTOM: #E5E5E5 1px solid; 
+	BORDER-RIGHT: #E5E5E5 0px solid;
+	text-align: left;
+	padding-left:5px; 
+	text-align:center; 
+}
+
+table.TableListRole td A
+{
+	color:#2F2D2E;
+	text-decoration: none; 
+}
+table.TableListRole td A:hover
+{
+	color:#FF0000;
+	text-decoration : none; 
+}
+
+table.TableListRole td.Name
+{
+	text-align:left;
+	color:#021A96; 
+}
+table.TableList td.Name A
+{
+	color:#021A96; 
+}
+table.TableListRole td.Name A:hover
+{
+	color:#FF0000; 
+}
+
+table.TableListRole tr.EmptyRow td
+{
+	border:#FFFFFF 1px solid;
+	color:#011B96;
+}
+
+table.TableListRole tr.OddRow td
+{
+	background-color:#fbfbfb;
+}
+.LabelSearchArticle
+{
+	padding-top:3px;
+}
+.table
+{
+	display:table;
+	width:100%;
+}
+.line1
+{
+	float:left;
+	margin-top:5px;
+	display:table;
+	width:90%;
+}
+.line1 input
+{
+	float:left;
+	margin-top:2px;
+}
+.W0, .RightCol .W0, .RightCol .W0 input
+{
+	width:20px;
+}
+.RightCol a
+{
+	color:#0212AF;
+	text-decoration:none;
+}
+.RightCol a:hover
+{
+	color:Red;
+}
+.padCol
+{
+	padding:4px 0;
+}
+.BotLine
+{
+	display:table;
+	width:100%;
+	padding:10px 0 4px;
+}
+#NDBtnBE input, .SearchBtn, .LineBE .SearchBtn
+{
+	width:90px;
+	padding:10px 0 0px 34px;
+	background-position:3px 2px;
+	color:#0212AF;
+	text-decoration:underline;
+}
+
+.RadSplitter_css
+{
+    height:800px;   
+}
+
+
+.search_title_text
+{
+    font-family:Arial;
+    font-size:12px;
+    font-weight:bold;
+}
+.search_border
+{
+    border-color:#111111 !important;
+}
+
+.line111 .col1 { float:left; width:50%}
+.line111 .col2 { float:left; width:50%}
+.line222 { clear:both; }
+
+.fileAttach
+{
+    font-family:Arial;
+    font-size:12px;
+    font-weight:bold;
+    color:#1B3F95;
+    text-decoration:none;   
+}
+
+.fileAttach:hover
+{
+    color:#ff0000;
+    text-decoration:none;   
+}
+
+.excelNote
+{
+    font-family:Arial;
+    font-size:10px;
+    font-style:italic;
+    color:#990000;
+    text-align:right;
+    padding-bottom:5px;
+}
+
+.textNote
+{
+    font-family:Arial;
+    font-size:10px;
+    font-style:italic;
+    color:#990000;
+}

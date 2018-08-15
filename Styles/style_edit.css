@@ -1,0 +1,74 @@
+@charset "utf-8";
+/* CSS Document */
+body{background:url(bg-login.jpg) repeat left top;}
+                            
+.cms-login {
+    width: 380px;
+}
+.cms-login * {
+    margin: 0;
+    padding: 0;
+}
+.logo-csm-vt {
+    background: rgba(0, 0, 0, 0) url("logo_vt.png") no-repeat scroll 0 0;
+    color: #d78430;
+    font-size: 19px;
+    height: 58px;
+    line-height: 58px;
+    margin-bottom: 20px;
+    padding-top: 30px;
+}
+.form-csm-p {
+    margin-bottom: 15px;
+    overflow: hidden;
+}
+.icon_user {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background: #ffffff none repeat scroll 0 0;
+    border-color: #dcdcdc -moz-use-text-color #dcdcdc #dcdcdc;
+    border-image: none;
+    border-radius: 5px 0 0 5px;
+    border-style: solid none solid solid;
+    border-width: 1px 0 1px 1px;
+    float: left;
+    height: 35px;
+    width: 45px;
+}
+.icon_user img {
+    margin-top: 5px;
+}
+.txt-cms {
+    border: 1px solid #dcdcdc;
+    color: #555555;
+    float: left;
+    font-size: 14px;
+    height: 35px;
+    padding: 0 10px;
+    width: 290px;
+}
+.form-captcha {
+}
+.form-captcha .txt-cms {
+    width: 205px;
+}
+.form-captcha .captcha-lnk {
+    float: left;
+    margin-left: 10px;
+    width: 120px;
+    overflow:hidden;
+}
+.form-captcha .captcha-lnk img {
+    display: block;
+    height: 35px;
+    width: 100%;
+}
+.form-cms-btn{}
+.form-cms-btn .btn-cms{background: #00918c none repeat scroll 0 0;
+    border: 0 none;
+    border-radius: 5px;
+    color: #ffffff;
+    font-size: 16px;
+    margin-top: 10px;padding:7px 20px;display:inline-block}

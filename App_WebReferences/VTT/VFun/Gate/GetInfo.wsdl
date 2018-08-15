@@ -1,0 +1,1255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="ListVideoRelate">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="tags" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ListVideoRelateResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ListVideoRelateResult" type="tns:ArrayOfVideoInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfVideoInfo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="VideoInfo" nillable="true" type="tns:VideoInfo" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="VideoInfo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Code" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Name" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="V2_ListVideoRelate">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="tags" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="cid" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="V2_ListVideoRelateResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="V2_ListVideoRelateResult" type="tns:ArrayOfVideoInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ListRadio">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="user" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pass" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ListRadioResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ListRadioResult" type="tns:ArrayOfRadioInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfRadioInfo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="RadioInfo" nillable="true" type="tns:RadioInfo" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="RadioInfo">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Status" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="Cid" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Code" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Name" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="PresentCheck">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="key" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="srcMsisdn" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="desMsisdn" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="type" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="code" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PresentCheckResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="PresentCheckResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PresentDownload">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="key" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="srcMsisdn" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="desMsisdn" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="type" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="code" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PresentDownloadResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="PresentDownloadResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Wap_Reg_VD7">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="msisdn" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="user" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pass" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Wap_Reg_VD7Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="Wap_Reg_VD7Result" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Wap_Reg_VD7_V2">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="msisdn" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="user" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pass" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Wap_Reg_VD7_V2Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="Wap_Reg_VD7_V2Result" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Wap_Reg_R7_V2">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="msisdn" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="user" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pass" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Wap_Reg_R7_V2Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="Wap_Reg_R7_V2Result" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Wap_Reg_MN_V2">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="msisdn" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="user" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pass" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Wap_Reg_MN_V2Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="Wap_Reg_MN_V2Result" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Wap_Reg_M7_V2">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="msisdn" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="user" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pass" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Wap_Reg_M7_V2Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="Wap_Reg_M7_V2Result" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Wap_Reg_S7_V2">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="msisdn" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="user" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pass" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Wap_Reg_S7_V2Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="Wap_Reg_S7_V2Result" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Wap_Reg_E7_V2">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="msisdn" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="user" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pass" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Wap_Reg_E7_V2Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="Wap_Reg_E7_V2Result" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Wap_Reg_E7_V3">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="msisdn" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="km" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="user" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pass" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Wap_Reg_E7_V3Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="Wap_Reg_E7_V3Result" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Wap_Reg">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="msisdn" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="packet" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="user" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pass" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Wap_RegResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="Wap_RegResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Wap_Reg_V3">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="msisdn" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="packet" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="km" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="user" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pass" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Wap_Reg_V3Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="Wap_Reg_V3Result" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Wap_DesReg">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="msisdn" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="packet" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="user" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pass" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Wap_DesRegResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="Wap_DesRegResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SubVideoHot_Update">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="cid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="isOther" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="code" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="name" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="user" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pass" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SubVideoHot_UpdateResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="SubVideoHot_UpdateResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SubVideoHot_SetStatus">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="cid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="isOther" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sTemp" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="status" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="user" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pass" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SubVideoHot_SetStatusResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="SubVideoHot_SetStatusResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Sub_GameHot_Update">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="code" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="name" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="user" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pass" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Sub_GameHot_UpdateResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="Sub_GameHot_UpdateResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Sub_GameHot_SetStatus">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sTemp" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="status" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="user" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pass" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Sub_GameHot_SetStatusResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="Sub_GameHot_SetStatusResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Sub_GameHot_SetTop">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sTemp" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="user" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pass" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Sub_GameHot_SetTopResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="Sub_GameHot_SetTopResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Games_Hot_Sub_Update">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="code" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="name" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="user" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pass" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Games_Hot_Sub_UpdateResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="Games_Hot_Sub_UpdateResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Games_Hot_Sub_SetStatus">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sTemp" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="status" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="user" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pass" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Games_Hot_Sub_SetStatusResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="Games_Hot_Sub_SetStatusResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Games_Hot_Sub_SetTop">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sTemp" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="user" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pass" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Games_Hot_Sub_SetTopResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="Games_Hot_Sub_SetTopResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Video_MN_Sync">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="code" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="name" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="description" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="date_pub" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="status" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="user" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pass" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Video_MN_SyncResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="Video_MN_SyncResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Video_MN_SetStatus">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sTemp" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="status" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="user" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pass" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Video_MN_SetStatusResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="Video_MN_SetStatusResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Video_MN_SetTop">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sTemp" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="user" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pass" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Video_MN_SetTopResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="Video_MN_SetTopResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="ListVideoRelateSoapIn">
+    <wsdl:part name="parameters" element="tns:ListVideoRelate" />
+  </wsdl:message>
+  <wsdl:message name="ListVideoRelateSoapOut">
+    <wsdl:part name="parameters" element="tns:ListVideoRelateResponse" />
+  </wsdl:message>
+  <wsdl:message name="V2_ListVideoRelateSoapIn">
+    <wsdl:part name="parameters" element="tns:V2_ListVideoRelate" />
+  </wsdl:message>
+  <wsdl:message name="V2_ListVideoRelateSoapOut">
+    <wsdl:part name="parameters" element="tns:V2_ListVideoRelateResponse" />
+  </wsdl:message>
+  <wsdl:message name="ListRadioSoapIn">
+    <wsdl:part name="parameters" element="tns:ListRadio" />
+  </wsdl:message>
+  <wsdl:message name="ListRadioSoapOut">
+    <wsdl:part name="parameters" element="tns:ListRadioResponse" />
+  </wsdl:message>
+  <wsdl:message name="PresentCheckSoapIn">
+    <wsdl:part name="parameters" element="tns:PresentCheck" />
+  </wsdl:message>
+  <wsdl:message name="PresentCheckSoapOut">
+    <wsdl:part name="parameters" element="tns:PresentCheckResponse" />
+  </wsdl:message>
+  <wsdl:message name="PresentDownloadSoapIn">
+    <wsdl:part name="parameters" element="tns:PresentDownload" />
+  </wsdl:message>
+  <wsdl:message name="PresentDownloadSoapOut">
+    <wsdl:part name="parameters" element="tns:PresentDownloadResponse" />
+  </wsdl:message>
+  <wsdl:message name="Wap_Reg_VD7SoapIn">
+    <wsdl:part name="parameters" element="tns:Wap_Reg_VD7" />
+  </wsdl:message>
+  <wsdl:message name="Wap_Reg_VD7SoapOut">
+    <wsdl:part name="parameters" element="tns:Wap_Reg_VD7Response" />
+  </wsdl:message>
+  <wsdl:message name="Wap_Reg_VD7_V2SoapIn">
+    <wsdl:part name="parameters" element="tns:Wap_Reg_VD7_V2" />
+  </wsdl:message>
+  <wsdl:message name="Wap_Reg_VD7_V2SoapOut">
+    <wsdl:part name="parameters" element="tns:Wap_Reg_VD7_V2Response" />
+  </wsdl:message>
+  <wsdl:message name="Wap_Reg_R7_V2SoapIn">
+    <wsdl:part name="parameters" element="tns:Wap_Reg_R7_V2" />
+  </wsdl:message>
+  <wsdl:message name="Wap_Reg_R7_V2SoapOut">
+    <wsdl:part name="parameters" element="tns:Wap_Reg_R7_V2Response" />
+  </wsdl:message>
+  <wsdl:message name="Wap_Reg_MN_V2SoapIn">
+    <wsdl:part name="parameters" element="tns:Wap_Reg_MN_V2" />
+  </wsdl:message>
+  <wsdl:message name="Wap_Reg_MN_V2SoapOut">
+    <wsdl:part name="parameters" element="tns:Wap_Reg_MN_V2Response" />
+  </wsdl:message>
+  <wsdl:message name="Wap_Reg_M7_V2SoapIn">
+    <wsdl:part name="parameters" element="tns:Wap_Reg_M7_V2" />
+  </wsdl:message>
+  <wsdl:message name="Wap_Reg_M7_V2SoapOut">
+    <wsdl:part name="parameters" element="tns:Wap_Reg_M7_V2Response" />
+  </wsdl:message>
+  <wsdl:message name="Wap_Reg_S7_V2SoapIn">
+    <wsdl:part name="parameters" element="tns:Wap_Reg_S7_V2" />
+  </wsdl:message>
+  <wsdl:message name="Wap_Reg_S7_V2SoapOut">
+    <wsdl:part name="parameters" element="tns:Wap_Reg_S7_V2Response" />
+  </wsdl:message>
+  <wsdl:message name="Wap_Reg_E7_V2SoapIn">
+    <wsdl:part name="parameters" element="tns:Wap_Reg_E7_V2" />
+  </wsdl:message>
+  <wsdl:message name="Wap_Reg_E7_V2SoapOut">
+    <wsdl:part name="parameters" element="tns:Wap_Reg_E7_V2Response" />
+  </wsdl:message>
+  <wsdl:message name="Wap_Reg_E7_V3SoapIn">
+    <wsdl:part name="parameters" element="tns:Wap_Reg_E7_V3" />
+  </wsdl:message>
+  <wsdl:message name="Wap_Reg_E7_V3SoapOut">
+    <wsdl:part name="parameters" element="tns:Wap_Reg_E7_V3Response" />
+  </wsdl:message>
+  <wsdl:message name="Wap_RegSoapIn">
+    <wsdl:part name="parameters" element="tns:Wap_Reg" />
+  </wsdl:message>
+  <wsdl:message name="Wap_RegSoapOut">
+    <wsdl:part name="parameters" element="tns:Wap_RegResponse" />
+  </wsdl:message>
+  <wsdl:message name="Wap_Reg_V3SoapIn">
+    <wsdl:part name="parameters" element="tns:Wap_Reg_V3" />
+  </wsdl:message>
+  <wsdl:message name="Wap_Reg_V3SoapOut">
+    <wsdl:part name="parameters" element="tns:Wap_Reg_V3Response" />
+  </wsdl:message>
+  <wsdl:message name="Wap_DesRegSoapIn">
+    <wsdl:part name="parameters" element="tns:Wap_DesReg" />
+  </wsdl:message>
+  <wsdl:message name="Wap_DesRegSoapOut">
+    <wsdl:part name="parameters" element="tns:Wap_DesRegResponse" />
+  </wsdl:message>
+  <wsdl:message name="SubVideoHot_UpdateSoapIn">
+    <wsdl:part name="parameters" element="tns:SubVideoHot_Update" />
+  </wsdl:message>
+  <wsdl:message name="SubVideoHot_UpdateSoapOut">
+    <wsdl:part name="parameters" element="tns:SubVideoHot_UpdateResponse" />
+  </wsdl:message>
+  <wsdl:message name="SubVideoHot_SetStatusSoapIn">
+    <wsdl:part name="parameters" element="tns:SubVideoHot_SetStatus" />
+  </wsdl:message>
+  <wsdl:message name="SubVideoHot_SetStatusSoapOut">
+    <wsdl:part name="parameters" element="tns:SubVideoHot_SetStatusResponse" />
+  </wsdl:message>
+  <wsdl:message name="Sub_GameHot_UpdateSoapIn">
+    <wsdl:part name="parameters" element="tns:Sub_GameHot_Update" />
+  </wsdl:message>
+  <wsdl:message name="Sub_GameHot_UpdateSoapOut">
+    <wsdl:part name="parameters" element="tns:Sub_GameHot_UpdateResponse" />
+  </wsdl:message>
+  <wsdl:message name="Sub_GameHot_SetStatusSoapIn">
+    <wsdl:part name="parameters" element="tns:Sub_GameHot_SetStatus" />
+  </wsdl:message>
+  <wsdl:message name="Sub_GameHot_SetStatusSoapOut">
+    <wsdl:part name="parameters" element="tns:Sub_GameHot_SetStatusResponse" />
+  </wsdl:message>
+  <wsdl:message name="Sub_GameHot_SetTopSoapIn">
+    <wsdl:part name="parameters" element="tns:Sub_GameHot_SetTop" />
+  </wsdl:message>
+  <wsdl:message name="Sub_GameHot_SetTopSoapOut">
+    <wsdl:part name="parameters" element="tns:Sub_GameHot_SetTopResponse" />
+  </wsdl:message>
+  <wsdl:message name="Games_Hot_Sub_UpdateSoapIn">
+    <wsdl:part name="parameters" element="tns:Games_Hot_Sub_Update" />
+  </wsdl:message>
+  <wsdl:message name="Games_Hot_Sub_UpdateSoapOut">
+    <wsdl:part name="parameters" element="tns:Games_Hot_Sub_UpdateResponse" />
+  </wsdl:message>
+  <wsdl:message name="Games_Hot_Sub_SetStatusSoapIn">
+    <wsdl:part name="parameters" element="tns:Games_Hot_Sub_SetStatus" />
+  </wsdl:message>
+  <wsdl:message name="Games_Hot_Sub_SetStatusSoapOut">
+    <wsdl:part name="parameters" element="tns:Games_Hot_Sub_SetStatusResponse" />
+  </wsdl:message>
+  <wsdl:message name="Games_Hot_Sub_SetTopSoapIn">
+    <wsdl:part name="parameters" element="tns:Games_Hot_Sub_SetTop" />
+  </wsdl:message>
+  <wsdl:message name="Games_Hot_Sub_SetTopSoapOut">
+    <wsdl:part name="parameters" element="tns:Games_Hot_Sub_SetTopResponse" />
+  </wsdl:message>
+  <wsdl:message name="Video_MN_SyncSoapIn">
+    <wsdl:part name="parameters" element="tns:Video_MN_Sync" />
+  </wsdl:message>
+  <wsdl:message name="Video_MN_SyncSoapOut">
+    <wsdl:part name="parameters" element="tns:Video_MN_SyncResponse" />
+  </wsdl:message>
+  <wsdl:message name="Video_MN_SetStatusSoapIn">
+    <wsdl:part name="parameters" element="tns:Video_MN_SetStatus" />
+  </wsdl:message>
+  <wsdl:message name="Video_MN_SetStatusSoapOut">
+    <wsdl:part name="parameters" element="tns:Video_MN_SetStatusResponse" />
+  </wsdl:message>
+  <wsdl:message name="Video_MN_SetTopSoapIn">
+    <wsdl:part name="parameters" element="tns:Video_MN_SetTop" />
+  </wsdl:message>
+  <wsdl:message name="Video_MN_SetTopSoapOut">
+    <wsdl:part name="parameters" element="tns:Video_MN_SetTopResponse" />
+  </wsdl:message>
+  <wsdl:portType name="Service1Soap">
+    <wsdl:operation name="ListVideoRelate">
+      <wsdl:input message="tns:ListVideoRelateSoapIn" />
+      <wsdl:output message="tns:ListVideoRelateSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="V2_ListVideoRelate">
+      <wsdl:input message="tns:V2_ListVideoRelateSoapIn" />
+      <wsdl:output message="tns:V2_ListVideoRelateSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ListRadio">
+      <wsdl:input message="tns:ListRadioSoapIn" />
+      <wsdl:output message="tns:ListRadioSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PresentCheck">
+      <wsdl:input message="tns:PresentCheckSoapIn" />
+      <wsdl:output message="tns:PresentCheckSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PresentDownload">
+      <wsdl:input message="tns:PresentDownloadSoapIn" />
+      <wsdl:output message="tns:PresentDownloadSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Wap_Reg_VD7">
+      <wsdl:input message="tns:Wap_Reg_VD7SoapIn" />
+      <wsdl:output message="tns:Wap_Reg_VD7SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Wap_Reg_VD7_V2">
+      <wsdl:input message="tns:Wap_Reg_VD7_V2SoapIn" />
+      <wsdl:output message="tns:Wap_Reg_VD7_V2SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Wap_Reg_R7_V2">
+      <wsdl:input message="tns:Wap_Reg_R7_V2SoapIn" />
+      <wsdl:output message="tns:Wap_Reg_R7_V2SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Wap_Reg_MN_V2">
+      <wsdl:input message="tns:Wap_Reg_MN_V2SoapIn" />
+      <wsdl:output message="tns:Wap_Reg_MN_V2SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Wap_Reg_M7_V2">
+      <wsdl:input message="tns:Wap_Reg_M7_V2SoapIn" />
+      <wsdl:output message="tns:Wap_Reg_M7_V2SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Wap_Reg_S7_V2">
+      <wsdl:input message="tns:Wap_Reg_S7_V2SoapIn" />
+      <wsdl:output message="tns:Wap_Reg_S7_V2SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Wap_Reg_E7_V2">
+      <wsdl:input message="tns:Wap_Reg_E7_V2SoapIn" />
+      <wsdl:output message="tns:Wap_Reg_E7_V2SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Wap_Reg_E7_V3">
+      <wsdl:input message="tns:Wap_Reg_E7_V3SoapIn" />
+      <wsdl:output message="tns:Wap_Reg_E7_V3SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Wap_Reg">
+      <wsdl:input message="tns:Wap_RegSoapIn" />
+      <wsdl:output message="tns:Wap_RegSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Wap_Reg_V3">
+      <wsdl:input message="tns:Wap_Reg_V3SoapIn" />
+      <wsdl:output message="tns:Wap_Reg_V3SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Wap_DesReg">
+      <wsdl:input message="tns:Wap_DesRegSoapIn" />
+      <wsdl:output message="tns:Wap_DesRegSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SubVideoHot_Update">
+      <wsdl:input message="tns:SubVideoHot_UpdateSoapIn" />
+      <wsdl:output message="tns:SubVideoHot_UpdateSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SubVideoHot_SetStatus">
+      <wsdl:input message="tns:SubVideoHot_SetStatusSoapIn" />
+      <wsdl:output message="tns:SubVideoHot_SetStatusSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Sub_GameHot_Update">
+      <wsdl:input message="tns:Sub_GameHot_UpdateSoapIn" />
+      <wsdl:output message="tns:Sub_GameHot_UpdateSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Sub_GameHot_SetStatus">
+      <wsdl:input message="tns:Sub_GameHot_SetStatusSoapIn" />
+      <wsdl:output message="tns:Sub_GameHot_SetStatusSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Sub_GameHot_SetTop">
+      <wsdl:input message="tns:Sub_GameHot_SetTopSoapIn" />
+      <wsdl:output message="tns:Sub_GameHot_SetTopSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Games_Hot_Sub_Update">
+      <wsdl:input message="tns:Games_Hot_Sub_UpdateSoapIn" />
+      <wsdl:output message="tns:Games_Hot_Sub_UpdateSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Games_Hot_Sub_SetStatus">
+      <wsdl:input message="tns:Games_Hot_Sub_SetStatusSoapIn" />
+      <wsdl:output message="tns:Games_Hot_Sub_SetStatusSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Games_Hot_Sub_SetTop">
+      <wsdl:input message="tns:Games_Hot_Sub_SetTopSoapIn" />
+      <wsdl:output message="tns:Games_Hot_Sub_SetTopSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Video_MN_Sync">
+      <wsdl:input message="tns:Video_MN_SyncSoapIn" />
+      <wsdl:output message="tns:Video_MN_SyncSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Video_MN_SetStatus">
+      <wsdl:input message="tns:Video_MN_SetStatusSoapIn" />
+      <wsdl:output message="tns:Video_MN_SetStatusSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Video_MN_SetTop">
+      <wsdl:input message="tns:Video_MN_SetTopSoapIn" />
+      <wsdl:output message="tns:Video_MN_SetTopSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="Service1Soap" type="tns:Service1Soap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ListVideoRelate">
+      <soap:operation soapAction="http://tempuri.org/ListVideoRelate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="V2_ListVideoRelate">
+      <soap:operation soapAction="http://tempuri.org/V2_ListVideoRelate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListRadio">
+      <soap:operation soapAction="http://tempuri.org/ListRadio" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PresentCheck">
+      <soap:operation soapAction="http://tempuri.org/PresentCheck" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PresentDownload">
+      <soap:operation soapAction="http://tempuri.org/PresentDownload" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Wap_Reg_VD7">
+      <soap:operation soapAction="http://tempuri.org/Wap_Reg_VD7" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Wap_Reg_VD7_V2">
+      <soap:operation soapAction="http://tempuri.org/Wap_Reg_VD7_V2" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Wap_Reg_R7_V2">
+      <soap:operation soapAction="http://tempuri.org/Wap_Reg_R7_V2" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Wap_Reg_MN_V2">
+      <soap:operation soapAction="http://tempuri.org/Wap_Reg_MN_V2" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Wap_Reg_M7_V2">
+      <soap:operation soapAction="http://tempuri.org/Wap_Reg_M7_V2" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Wap_Reg_S7_V2">
+      <soap:operation soapAction="http://tempuri.org/Wap_Reg_S7_V2" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Wap_Reg_E7_V2">
+      <soap:operation soapAction="http://tempuri.org/Wap_Reg_E7_V2" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Wap_Reg_E7_V3">
+      <soap:operation soapAction="http://tempuri.org/Wap_Reg_E7_V3" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Wap_Reg">
+      <soap:operation soapAction="http://tempuri.org/Wap_Reg" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Wap_Reg_V3">
+      <soap:operation soapAction="http://tempuri.org/Wap_Reg_V3" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Wap_DesReg">
+      <soap:operation soapAction="http://tempuri.org/Wap_DesReg" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SubVideoHot_Update">
+      <soap:operation soapAction="http://tempuri.org/SubVideoHot_Update" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SubVideoHot_SetStatus">
+      <soap:operation soapAction="http://tempuri.org/SubVideoHot_SetStatus" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Sub_GameHot_Update">
+      <soap:operation soapAction="http://tempuri.org/Sub_GameHot_Update" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Sub_GameHot_SetStatus">
+      <soap:operation soapAction="http://tempuri.org/Sub_GameHot_SetStatus" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Sub_GameHot_SetTop">
+      <soap:operation soapAction="http://tempuri.org/Sub_GameHot_SetTop" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Games_Hot_Sub_Update">
+      <soap:operation soapAction="http://tempuri.org/Games_Hot_Sub_Update" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Games_Hot_Sub_SetStatus">
+      <soap:operation soapAction="http://tempuri.org/Games_Hot_Sub_SetStatus" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Games_Hot_Sub_SetTop">
+      <soap:operation soapAction="http://tempuri.org/Games_Hot_Sub_SetTop" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Video_MN_Sync">
+      <soap:operation soapAction="http://tempuri.org/Video_MN_Sync" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Video_MN_SetStatus">
+      <soap:operation soapAction="http://tempuri.org/Video_MN_SetStatus" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Video_MN_SetTop">
+      <soap:operation soapAction="http://tempuri.org/Video_MN_SetTop" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="Service1Soap12" type="tns:Service1Soap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ListVideoRelate">
+      <soap12:operation soapAction="http://tempuri.org/ListVideoRelate" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="V2_ListVideoRelate">
+      <soap12:operation soapAction="http://tempuri.org/V2_ListVideoRelate" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListRadio">
+      <soap12:operation soapAction="http://tempuri.org/ListRadio" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PresentCheck">
+      <soap12:operation soapAction="http://tempuri.org/PresentCheck" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PresentDownload">
+      <soap12:operation soapAction="http://tempuri.org/PresentDownload" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Wap_Reg_VD7">
+      <soap12:operation soapAction="http://tempuri.org/Wap_Reg_VD7" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Wap_Reg_VD7_V2">
+      <soap12:operation soapAction="http://tempuri.org/Wap_Reg_VD7_V2" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Wap_Reg_R7_V2">
+      <soap12:operation soapAction="http://tempuri.org/Wap_Reg_R7_V2" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Wap_Reg_MN_V2">
+      <soap12:operation soapAction="http://tempuri.org/Wap_Reg_MN_V2" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Wap_Reg_M7_V2">
+      <soap12:operation soapAction="http://tempuri.org/Wap_Reg_M7_V2" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Wap_Reg_S7_V2">
+      <soap12:operation soapAction="http://tempuri.org/Wap_Reg_S7_V2" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Wap_Reg_E7_V2">
+      <soap12:operation soapAction="http://tempuri.org/Wap_Reg_E7_V2" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Wap_Reg_E7_V3">
+      <soap12:operation soapAction="http://tempuri.org/Wap_Reg_E7_V3" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Wap_Reg">
+      <soap12:operation soapAction="http://tempuri.org/Wap_Reg" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Wap_Reg_V3">
+      <soap12:operation soapAction="http://tempuri.org/Wap_Reg_V3" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Wap_DesReg">
+      <soap12:operation soapAction="http://tempuri.org/Wap_DesReg" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SubVideoHot_Update">
+      <soap12:operation soapAction="http://tempuri.org/SubVideoHot_Update" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SubVideoHot_SetStatus">
+      <soap12:operation soapAction="http://tempuri.org/SubVideoHot_SetStatus" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Sub_GameHot_Update">
+      <soap12:operation soapAction="http://tempuri.org/Sub_GameHot_Update" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Sub_GameHot_SetStatus">
+      <soap12:operation soapAction="http://tempuri.org/Sub_GameHot_SetStatus" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Sub_GameHot_SetTop">
+      <soap12:operation soapAction="http://tempuri.org/Sub_GameHot_SetTop" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Games_Hot_Sub_Update">
+      <soap12:operation soapAction="http://tempuri.org/Games_Hot_Sub_Update" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Games_Hot_Sub_SetStatus">
+      <soap12:operation soapAction="http://tempuri.org/Games_Hot_Sub_SetStatus" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Games_Hot_Sub_SetTop">
+      <soap12:operation soapAction="http://tempuri.org/Games_Hot_Sub_SetTop" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Video_MN_Sync">
+      <soap12:operation soapAction="http://tempuri.org/Video_MN_Sync" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Video_MN_SetStatus">
+      <soap12:operation soapAction="http://tempuri.org/Video_MN_SetStatus" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Video_MN_SetTop">
+      <soap12:operation soapAction="http://tempuri.org/Video_MN_SetTop" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Service1">
+    <wsdl:port name="Service1Soap" binding="tns:Service1Soap">
+      <soap:address location="http://210.211.99.24/VfunGate/GetInfo.asmx" />
+    </wsdl:port>
+    <wsdl:port name="Service1Soap12" binding="tns:Service1Soap12">
+      <soap12:address location="http://210.211.99.24/VfunGate/GetInfo.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

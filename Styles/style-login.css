@@ -1,0 +1,92 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+	background:#ffffff url(bg-body.jpg) repeat-x;
+	margin:0;
+	padding:0;
+	font:12px/18px Arial, Helvetica, sans-serif;
+	height:100%;
+	color:#2d2723;
+}
+img{
+	border:none;
+}
+a {
+	color:#1B5790;
+	text-decoration:none;
+}
+p{
+	margin:0;
+	padding:5px 10px 10px 0;
+}
+span{	
+	font:11px/24px Arial, Helvetica, sans-serif;
+	font-weight:bold;
+	clear:both;
+	float:left;
+}
+a:hover {
+	color:#E54F00;
+}
+.bolt {
+	font-weight:bold;
+}
+.logo{
+	background:url(logo.jpg) no-repeat center;
+	width:76px;
+	height:43px;
+	margin:0 0 0 10px;
+	padding:0;
+	float:left;
+}
+table{
+	border-collapse:collapse;height:100%;width:100%; margin:0; padding:0
+}
+.footer{
+	background:url(bg-footer.jpg) top repeat-x;
+	margin:0;
+	padding:0 0 0 5px;
+	height:36px;
+	font:12px/36px "arial";
+}
+.link{
+	background:url(bg-link.jpg) repeat-x;
+	margin:0;
+	padding:0;
+	height:34px;
+}
+.bg-login{
+	background:url(bg-login.jpg) no-repeat;
+	width:633px;
+	height:330px;
+	margin:0 auto;
+	padding:0;
+}
+.htql{
+	height:31px;
+	background:url(ht.jpg) no-repeat;
+	margin:0 auto;
+	padding:0;
+	width:451px;
+	
+}
+.ip{
+	width:auto;
+	margin:0;
+	padding:0;
+	height:auto;
+	text-align:left;
+
+}
+.ip li{
+	background:url(nut.jpg) left no-repeat;
+	background-position:0 5px;
+	color:#2d2723;
+	font:12px/20px Arial, Helvetica, sans-serif;	
+	padding:0;
+	list-style:none;
+	text-align:left;
+
+	
+}

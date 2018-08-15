@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="INSERT_FREE_MO">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="RequestID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="UserID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ServiceID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CommandCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Info" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="INSERT_FREE_MOResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="INSERT_FREE_MOResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="INSERT_FAKE_MO">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UserID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ServiceID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CommandCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Info" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="INSERT_FAKE_MOResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="INSERT_FAKE_MOResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="INSERT_FREE_MT">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UserID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Info" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ContentType" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="INSERT_FREE_MTResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="INSERT_FREE_MTResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="INSERT_MT_GET_MONEY">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UserID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ServiceID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Commandcode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Info" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ContentType" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="INSERT_MT_GET_MONEYResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="INSERT_MT_GET_MONEYResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="INSERT_FREE_MOSoapIn">
+    <wsdl:part name="parameters" element="tns:INSERT_FREE_MO" />
+  </wsdl:message>
+  <wsdl:message name="INSERT_FREE_MOSoapOut">
+    <wsdl:part name="parameters" element="tns:INSERT_FREE_MOResponse" />
+  </wsdl:message>
+  <wsdl:message name="INSERT_FAKE_MOSoapIn">
+    <wsdl:part name="parameters" element="tns:INSERT_FAKE_MO" />
+  </wsdl:message>
+  <wsdl:message name="INSERT_FAKE_MOSoapOut">
+    <wsdl:part name="parameters" element="tns:INSERT_FAKE_MOResponse" />
+  </wsdl:message>
+  <wsdl:message name="INSERT_FREE_MTSoapIn">
+    <wsdl:part name="parameters" element="tns:INSERT_FREE_MT" />
+  </wsdl:message>
+  <wsdl:message name="INSERT_FREE_MTSoapOut">
+    <wsdl:part name="parameters" element="tns:INSERT_FREE_MTResponse" />
+  </wsdl:message>
+  <wsdl:message name="INSERT_MT_GET_MONEYSoapIn">
+    <wsdl:part name="parameters" element="tns:INSERT_MT_GET_MONEY" />
+  </wsdl:message>
+  <wsdl:message name="INSERT_MT_GET_MONEYSoapOut">
+    <wsdl:part name="parameters" element="tns:INSERT_MT_GET_MONEYResponse" />
+  </wsdl:message>
+  <wsdl:portType name="WsXNKSoap">
+    <wsdl:operation name="INSERT_FREE_MO">
+      <wsdl:input message="tns:INSERT_FREE_MOSoapIn" />
+      <wsdl:output message="tns:INSERT_FREE_MOSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="INSERT_FAKE_MO">
+      <wsdl:input message="tns:INSERT_FAKE_MOSoapIn" />
+      <wsdl:output message="tns:INSERT_FAKE_MOSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="INSERT_FREE_MT">
+      <wsdl:input message="tns:INSERT_FREE_MTSoapIn" />
+      <wsdl:output message="tns:INSERT_FREE_MTSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="INSERT_MT_GET_MONEY">
+      <wsdl:input message="tns:INSERT_MT_GET_MONEYSoapIn" />
+      <wsdl:output message="tns:INSERT_MT_GET_MONEYSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WsXNKSoap" type="tns:WsXNKSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="INSERT_FREE_MO">
+      <soap:operation soapAction="http://tempuri.org/INSERT_FREE_MO" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="INSERT_FAKE_MO">
+      <soap:operation soapAction="http://tempuri.org/INSERT_FAKE_MO" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="INSERT_FREE_MT">
+      <soap:operation soapAction="http://tempuri.org/INSERT_FREE_MT" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="INSERT_MT_GET_MONEY">
+      <soap:operation soapAction="http://tempuri.org/INSERT_MT_GET_MONEY" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="WsXNKSoap12" type="tns:WsXNKSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="INSERT_FREE_MO">
+      <soap12:operation soapAction="http://tempuri.org/INSERT_FREE_MO" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="INSERT_FAKE_MO">
+      <soap12:operation soapAction="http://tempuri.org/INSERT_FAKE_MO" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="INSERT_FREE_MT">
+      <soap12:operation soapAction="http://tempuri.org/INSERT_FREE_MT" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="INSERT_MT_GET_MONEY">
+      <soap12:operation soapAction="http://tempuri.org/INSERT_MT_GET_MONEY" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="WsXNK">
+    <wsdl:port name="WsXNKSoap" binding="tns:WsXNKSoap">
+      <soap:address location="http://192.168.228.100:7777/crbt/wsXNK.asmx" />
+    </wsdl:port>
+    <wsdl:port name="WsXNKSoap12" binding="tns:WsXNKSoap12">
+      <soap12:address location="http://192.168.228.100:7777/crbt/wsXNK.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

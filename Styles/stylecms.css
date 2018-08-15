@@ -1,0 +1,129 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*================ Name:: Hoang Van Cuong ==============*/
+/*================ Mobile:: 0932233531 =================*/
+/*================ Yahoo:: undyinglove301 ==============*/
+/*================ E-mail:: cuonghv.301@gmail.com ======*/
+/*================ Website:: designno1.net =============*/
+html{
+	background:url(bg-footer.jpg) bottom repeat-x;
+}
+body{
+	background:url(bg-body.jpg) repeat-x;
+	margin:0;
+	padding:0;
+	font:8px/14px Arial, Helvetica, sans-serif;
+}
+font{
+	font:8px/14px Arial, Helvetica, sans-serif;
+}
+.clear{
+	clear:both;
+}
+
+
+a{
+	color:#349608;
+	text-decoration:none;
+	font-size:8PX;
+}
+a:hover{
+	text-decoration:underline;
+}
+.bold{
+	font-weight:bold;
+}
+*{
+	margin:0;
+	padding:0;
+}
+
+/*=======================================================================*/
+.menu{
+	width:180px;
+	/*height:auto;overflow:hidden;*/
+	height:590px;
+	overflow:scroll;
+	line-height:25px;
+}
+.menu li{
+	list-style:none;
+	margin-top:0px;
+	padding:0;
+	line-height:25px;
+	text-align:left;
+	
+}
+.menu li a
+{
+	background:url(menu012-begin.jpg) no-repeat;
+	font:12px/20px Arial, Helvetica, sans-serif;
+	display:block;
+	font-weight:bold;
+	padding:0 0 0 1px;
+	text-decoration:none;
+	color:#FFF;
+	height:25px;
+	margin-top:0px;
+
+	
+}
+
+.menuroot
+{
+	font:12px/20px Arial, Helvetica, sans-serif;
+	display:block;
+	font-weight:bold;
+	text-decoration:none;
+	color:#FFF;
+	height:28px;
+	margin-top:1px;
+	margin-left:3px;
+}
+
+.menu li a:hover, .menu li.act  >a{
+	background:url(menu01-info.jpg) no-repeat;
+	font:11px/20px Arial, Helvetica, sans-serif;	
+	padding:0 0 0 2px;
+	font-weight:bold;
+	color:#fee900;
+}
+
+.menu li ul{
+	width:180px;
+	height:auto;
+	display:block;
+}
+
+.menu li ul li{	
+	list-style:none;
+	margin:0;
+	height:25px;
+	margin:0;
+	padding:0;
+	line-height:25px;
+
+}
+.menu li ul li a
+{
+	background:url(tab-begin.jpg) no-repeat;
+	padding:0 0 0 5px;
+	color:#000;
+	font:12px/23px Arial, Helvetica, sans-serif;
+	font-weight:bold;
+	text-decoration:none;
+	display:block;
+	height:25px;
+}
+.menu li ul li a:hover
+{
+	background:url(tab-begin.jpg) no-repeat;
+	padding:0 0 0 5px;
+	font:12px/23px Arial, Helvetica, sans-serif;
+	font-weight:bold;
+	color:red;
+	text-decoration:none;
+	
+}
+/*===============================================================*/

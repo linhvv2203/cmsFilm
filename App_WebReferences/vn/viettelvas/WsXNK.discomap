@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DiscoveryClientResultsFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Results>
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.ContractReference" url="http://viettelvas.vn:7777/xnk/WsXNK.asmx?wsdl" filename="WsXNK.wsdl" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.DiscoveryDocumentReference" url="http://viettelvas.vn:7777/xnk/WsXNK.asmx?disco" filename="WsXNK.disco" />
+  </Results>
+</DiscoveryClientResultsFile>

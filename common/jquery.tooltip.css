@@ -1,0 +1,24 @@
+#tooltip {
+	position: absolute;
+	z-index: 3000;
+	border: 1px solid #ccc;
+	background-color: #f8f6f6;
+	padding:0;	
+	max-width:500px;
+	float:left;
+	
+}
+ #tooltip .body  
+ {
+     margin: 0;
+     padding:5px;
+     
+  }
+ #tooltip h3
+ {
+     color:#013362;
+     font:12px/20px "arial";
+     font-weight:bold;
+     background:#eeeeee;
+     padding:0 5px 0 5px;
+ }
